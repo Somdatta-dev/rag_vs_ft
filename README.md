@@ -453,7 +453,6 @@ Technique: Supervised Instruction Fine-tuning
 
 ## 📝 Assignment Compliance
 
-### **✅ All Requirements Met**
 
 #### **Data Collection & Preprocessing**
 - ✅ Financial statements (last 2 years): Accenture FY2023-2024
