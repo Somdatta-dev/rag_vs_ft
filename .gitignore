@@ -250,3 +250,6 @@ mlruns/
 # Deployment guides (keep local only)
 coolify-deploy.md
 coolify-demo-deploy.md
+
+# PDF version of README (keep local only)
+README_PDF_VERSION.md
