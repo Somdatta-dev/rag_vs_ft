@@ -1,5 +1,7 @@
 # RAG vs Fine-Tuning Financial QA System - Assignment Implementation
 
+**🎉 Live Demo**: [https://ragvft.somdatta.dev](https://ragvft.somdatta.dev)
+
 A comprehensive comparative system implementing **Retrieval-Augmented Generation (RAG)** and **LoRA Fine-tuning** approaches for financial question answering, built for academic assignment submission.
 
 ## 📋 Assignment Overview
