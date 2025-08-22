@@ -2,6 +2,8 @@
 
 **🎉 Live Demo**: [https://ragvft.somdatta.dev](https://ragvft.somdatta.dev)
 
+> **⚠️ Demo Note**: This is a CPU-only deployment for UI demonstration purposes. The live demo shows the complete interface and mock responses but does not perform actual AI model inference due to GPU limitations in the cloud environment.
+
 A comprehensive comparative system implementing **Retrieval-Augmented Generation (RAG)** and **LoRA Fine-tuning** approaches for financial question answering, built for academic assignment submission.
 
 ## 📋 Assignment Overview
