@@ -246,3 +246,7 @@ yarn.lock
 checkpoint-*/
 wandb/
 mlruns/
+
+# Deployment guides (keep local only)
+coolify-deploy.md
+coolify-demo-deploy.md
