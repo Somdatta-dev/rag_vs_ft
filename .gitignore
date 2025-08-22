@@ -1,0 +1,248 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Model files and directories (Large files that shouldn't be in Git)
+models/
+*.bin
+*.safetensors
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Hugging Face cache
+.cache/
+transformers_cache/
+huggingface_hub/
+
+# Dataset files (often large)
+data/raw/*.pdf
+data/raw/*.docx
+data/raw/*.xlsx
+data/raw/*.csv
+data/processed/*.txt
+data/processed/*.json
+*.parquet
+
+# Results and outputs
+results/
+outputs/
+logs/
+*.log
+*.out
+*.err
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Windows
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Streamlit
+.streamlit/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration files with secrets
+config.local.py
+secrets.py
+.env.local
+.env.production
+
+# GPU/CUDA cache
+.nv/
+
+# Large data files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Screenshots and images (if large)
+screenshots/*.png
+screenshots/*.jpg
+screenshots/*.jpeg
+Screenshot/*.png
+Screenshot/*.jpg
+Screenshot/*.jpeg
+
+# Node.js (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker (optional - remove if you want to track these)
+# Dockerfile
+# docker-compose*.yml
+# .dockerignore
+
+# Backup files
+*.bak
+*.backup
+
+# Lock files
+poetry.lock
+package-lock.json
+yarn.lock
+
+# Custom application specific
+# Add any custom files/folders your project generates
+checkpoint-*/
+wandb/
+mlruns/

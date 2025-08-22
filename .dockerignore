@@ -1,0 +1,157 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Documentation and screenshots (keep essential ones)
+*.md
+!README.md
+Screenshot/
+screenshots/
+
+# Development and testing files
+tests/
+notebooks/
+*.log
+*.logs
+
+# Large model files that should be downloaded at runtime
+# (Comment out if you want to include pre-downloaded models)
+# models/Llama-3.1-8B-Instruct/
+# models/mxbai-embed-large-v1/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Results and outputs (will be generated at runtime)
+results/*.csv
+results/*.json
+results/*.txt
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Local configuration
+config.local.py
+secrets.py
+
+# Streamlit cache
+.streamlit/
+
+# Node modules (if any)
+node_modules/
+
+# Backup files
+*.bak
+*.backup
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Lock files
+poetry.lock
+Pipfile.lock

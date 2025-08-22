@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  financial-qa-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    ports:
+      - "8501:8501"
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Persistent storage for models and data
+      - ./models:/app/models:rw
+      - ./data:/app/data:rw
+      - ./results:/app/results:rw
+      # Optional: Mount local config for development
+      # - ./config.py:/app/config.py:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - financial-qa-network
+
+  # Optional: PostgreSQL database for advanced features
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: financial_qa
+      POSTGRES_USER: qa_user
+      POSTGRES_PASSWORD: secure_password_123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - financial-qa-network
+
+  # Optional: Redis for caching (if needed)
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    networks:
+      - financial-qa-network
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  financial-qa-network:
+    driver: bridge
