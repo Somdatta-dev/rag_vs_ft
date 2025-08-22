@@ -1,0 +1,36 @@
+# CPU-only requirements for demo deployment
+# Lightweight versions without GPU dependencies
+
+streamlit
+transformers
+datasets
+accelerate
+huggingface-hub
+sentence-transformers
+sentencepiece
+faiss-cpu
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+streamlit-chat
+beautifulsoup4
+lxml
+nltk
+tqdm
+python-dotenv
+Pillow
+
+# Remove heavy GPU dependencies:
+# - bitsandbytes (GPU quantization)
+# - adapters (PEFT)
+# - peft (Parameter Efficient Fine-Tuning)
+# - chromadb (vector database - heavy)
+# - rank-bm25 (can be mocked)
+# - OCR dependencies (pytesseract, easyocr, etc.)
+# - PDF processing (pdfplumber, pypdf, etc.)
+# - Database dependencies (psycopg2, sqlalchemy, etc.)
+
+# Keep only essential packages for UI demo
