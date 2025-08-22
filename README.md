@@ -263,7 +263,7 @@ python baseline_evaluation.py
 | 5 | What was the effective tax rate for Q4 fiscal 2023? | "I don't have access to real-time data..." | "Accenture's GAAP effective tax rate for Q4 fiscal 2023 was 25.6%, compared to 26.0% in Q4 fiscal 2022. The full year rate was 25.5%." | 0.15 / 0.48 |
 
 **Key Baseline Findings:**
-- ✅ **Speed Improvement**: Fine-tuned model 2.5x faster (2.91s → 1.15s) - *Note: FT model is quantized (4-bit) while base model runs unquantized, contributing to faster inference*
+- ✅ **Speed Improvement**: Fine-tuned model 2.5x faster (2.91s → 1.15s) - *Note: FT model is quantized (8-bit) while base model runs unquantized, contributing to faster inference*
 - ✅ **Similarity Improvement**: 4.4x better semantic similarity (0.11 → 0.48)
 - ✅ **Accuracy Improvement**: Fine-tuned achieved 10% vs 0% accuracy
 - ✅ **Response Quality**: Base model gave generic "no access" responses, fine-tuned provided specific financial data
@@ -495,17 +495,7 @@ Technique: Supervised Instruction Fine-tuning
 
 ---
 
-## 🚀 For Assignment Submission
 
-### **ZIP Package Contents**
-```
-Group_X_RAG_vs_FT.zip
-├── README.md (comprehensive documentation)
-├── app.py, gui.py, rag_pipeline.py, finetune_pipeline.py
-├── data/ (391 Q&A pairs + financial documents)
-├── results/ (evaluation outputs + hyperparameters)
-├── Assignment_Requirements_Analysis.ipynb
-└── assignment_report.pdf (screenshots + analysis)
 ```
 
 ### **Deployment Ready**
@@ -537,6 +527,4 @@ This implementation successfully demonstrates a **comprehensive comparison** bet
 - **Sophisticated Training**: 15 epochs with smart early stopping
 - **Advanced Guardrails**: Dual-layer validation for responsible AI
 - **Comprehensive Documentation**: Technical details + experimental results
-
-**Ready for academic submission with compelling experimental evidence!** 🚀
 
